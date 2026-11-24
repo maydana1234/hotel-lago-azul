@@ -1,1 +1,85 @@
-@import "tailwindcss";
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  color: #0f172a;
+  background-color: #0b1120;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #0f172a;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.18);
+}
+
+button,
+a.btn-accion {
+  transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+button:hover,
+a.btn-accion:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.22);
+}
+
+button:active,
+a.btn-accion:active {
+  transform: translateY(0);
+}
+
+.tarjeta-modulo {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.tarjeta-modulo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 34px rgba(2, 6, 23, 0.32) !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+th {
+  background: #0f172a;
+  color: #f8fafc;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+td {
+  font-size: 14px;
+  color: #1e293b;
+}
+
+tbody tr:hover {
+  background-color: #f8fafc;
+}
