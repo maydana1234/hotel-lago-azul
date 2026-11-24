@@ -1,9 +1,5 @@
-import UserCard from "@/components/UserCard";
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return (
-    <main className="main">
-      <UserCard />
-    </main>
-  );
+  redirect('/login');
 }
